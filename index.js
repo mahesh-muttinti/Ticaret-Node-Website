@@ -76,7 +76,7 @@ app.use(express.static('public'))
 // ejs files rendering
 
 app.get('/', (req, res) => {
-	res.render('landingPage')
+	res.render('index')
 })
 
 // login post request
@@ -89,11 +89,23 @@ app.post('/login', passport.authenticate('local', {
 })
 
 app.get('/user-page', (req, res) => {
-	res.render('userPage')
+	res.render('userpage')
 })
 
 app.get('/register', (req, res) => {
-	res.render('signupPage')
+	res.render('register')
+})
+
+app.get('/movie-details', (req, res) => {
+	res.render('moviedetails')
+})
+
+app.get('/buy-tickets', (req, res) => {
+	res.render('buytickets')
+})
+
+app.get('/theatres', (req, res) => {
+	res.render('theatre')
 })
 
 // post request for signup
