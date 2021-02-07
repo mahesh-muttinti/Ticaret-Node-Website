@@ -20,6 +20,6 @@ this.onload = () => {
 	}
 	signup.onclick = (ev) => {
 		ev.preventDefault()
-		window.location.href = './register.html'
+		window.location.href = './register.ejs'
 	}
 }
