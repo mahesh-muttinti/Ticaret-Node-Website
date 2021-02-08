@@ -89,7 +89,7 @@ app.post('/login', passport.authenticate('local', {
 })
 
 app.get('/user-page', (req, res) => {
-	res.render('userPage')
+	res.render('userpage')
 })
 
 app.get('/register', (req, res) => {
