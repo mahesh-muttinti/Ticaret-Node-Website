@@ -97,7 +97,7 @@ app.get('/register', (req, res) => {
 })
 
 app.get('/movie-details', (req, res) => {
-	res.render('movie-details')
+	res.render('moviedetails')
 })
 
 app.get('/buy-tickets', (req, res) => {
